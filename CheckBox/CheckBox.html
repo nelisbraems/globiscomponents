@@ -1,0 +1,21 @@
+<div ng-if="model.visible" class="control-field {{model.labelDetails.labelOrientation}}">
+   <div class="control-label" ng-class="{'highlight-label':handlers.onLabelDoubleClickMethodID   , 'dx-field-label':!svyServoyapi.isInDesigner()} " ng-show="model.labelDetails.labelText.length > 0">
+	  <label style="{{model.labelDetails.labelCss}}" for="{{::model.svyMarkupId}}TextArea" ng-class="model.labelDetails.styleClass" 
+	  	svy-click='onLabelClick($event)'
+		svy-dblclick='handlers.onLabelDoubleClickMethodID($event)' 
+		svy-rightclick='handlers.onLabelRightClickMethodID($event)' >{{model.labelDetails.labelText}}</label>
+   </div>
+    <div class="control-value">
+        <div class="dx-field bts-check" ng-if="model.visible" ng-class="[model.styleClass, model.styleClassDataprovider]">
+		<div id="{{::model.svyMarkupId}}" 
+		dx-check-box="checkBox.checkBoxOptions"
+		ng-model="model.checkboxValue"				
+		svy-autoapply  
+		ng-class="{'dx-checkbox-icon-edit' : !model.readOnly, 'dx-checkbox-align-right' : model.alignment == 1}"
+		style="{{model.css}}"
+		svy-focusgained='handlers.onFocusGainedMethodID($event)'
+		svy-rightclick='handlers.onRightClickMethodID($event)'
+		svy-focuslost='handlers.onFocusLostMethodID($event)'>
+	</div>
+</div>
+</div>

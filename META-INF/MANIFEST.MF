@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+CSS-ClientLibs: globiscomponents/lib/css/dx.common.css;name=dx.common.cs
+ s;version=19.1.5, globiscomponents/lib/css/dx.light.css;name=dx.light.c
+ ss;version=19.1.5  
+Bundle-Name: Globis Components
+Bundle-SymbolicName: globiscomponents
+Package-Type: Web-Component
+Bundle-Version: 1
+JS-ClientLibs: globiscomponents/lib/js/dx.all.js;name=dx.all.js;version=
+ 19.1.5 
+
+Name: TextBox/TextBox.spec
+Web-Component: True
+
+Name: CheckBox/CheckBox.spec
+Web-Component: True
+
+Name: Button/Button.spec
+Web-Component: True
+
+Name: TagsInput/TagsInput.spec
+Web-Component: True
+

@@ -1,0 +1,20 @@
+<div class="bts-button" id="{{::model.svyMarkupId}}Button" dx-button="ButtonOptions" 
+	svy-click='handlers.onActionMethodID($event)' 
+	svy-dblclick='handlers.onDoubleClickMethodID($event)' 
+	svy-rightclick='handlers.onRightClickMethodID($event)'
+	svy-enter="handlers.onActionMethodID($event)"
+	sablo-tabseq="model.tabSeq"
+	sablo-tabseq-config="{container: true}"
+ 	ng-if="model.visible && !model.dropDownActions" ng-class="model.styleClass"
+	style="{{model.css}}">
+</div>
+
+<div class="bts-button" id="{{::model.svyMarkupId}}Button" dx-drop-down-button="ButtonOptions"
+	svy-dblclick='handlers.onDoubleClickMethodID($event)' 
+	svy-rightclick='handlers.onRightClickMethodID($event)'
+	svy-enter="handlers.onActionMethodID($event)"
+	sablo-tabseq="model.tabSeq"
+	sablo-tabseq-config="{container: true}"
+ 	ng-if="model.visible && model.dropDownActions" ng-class="model.styleClass"
+	style="{{model.css}}">
+</div>
